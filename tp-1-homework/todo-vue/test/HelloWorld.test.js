@@ -4,13 +4,6 @@ import { describe,expect,it } from 'vitest'
 
 
 describe('HelloWorld', () => {
-    it('renders props.msg when passed', () => {
-        const msg = 'new message'
-        const wrapper = mount(HelloWorld, {
-        props: { msg }
-        })
-        expect(wrapper.text()).toContain(msg)
-    })
 
     it('renders props.msg when passed', () => {
         const msg = 'new message'
@@ -19,5 +12,5 @@ describe('HelloWorld', () => {
         })
         expect(wrapper.text()).toContain(msg)
     })
-  
+
 })

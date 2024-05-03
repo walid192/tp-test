@@ -1,10 +1,5 @@
-# todo-vue
+# todo-app-using-vue
 
-Sample todo app built with the Vue framework.
-For the accompanying documentation, see
-[Understanding client-side JavaScript frameworks: Vue tutorials](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks#vue_tutorials).
-
-For the live version, see <https://mdn.github.io/todo-vue/>.
 
 ## Getting Started
 
@@ -38,17 +33,44 @@ npm run lint
 npm run format
 ```
 
-### Customize configuration
 
-See [Configuration Reference](https://vuejs.org/guide/essentials/application.html#app-configurations).
+## Tests suite
+    
+```bash
+    npm run test
+```
+## Coverage Report on HelloWorld Component
 
-## Contributing
+![Coverage Report](../todo-vue/src/assets/test-coverage.png)
+    
+1. **HelloWorld Component**:
+   - Renders props.msg when passed.
+2. **ToDoForm Component**:
+   - Does not emit "todo-added" event if input is empty.
+   - Emits "todo-added" event with label when form is submitted with input.
+3. **ToDoItemEditForm Component**:
+   - Emits "item-edited" event with new label when form is submitted.
+   - Emits "edit-cancelled" event when cancel button is clicked.
 
-Our project welcomes contributions from any member of our community.
-To get started contributing, please see our [Contributor Guide](CONTRIBUTING.md).
+## Coverage Report
 
-By participating in and contributing to our projects and discussions, you acknowledge that you have read and agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
+<!-- add image from assets/coverage.png -->
+## Coverage Report on HelloWorld Component
 
-## License
+![Coverage Report](../todo-vue/src/assets/coverage1.png)
+## Coverage Report on TodoForm Component
 
-This project is licensed under the [LICENSE](LICENSE).
+![Coverage Report](../todo-vue/src/assets/coverage2.png)
+## Coverage Report on ToDoItemEditForm Component
+
+![Coverage Report](../todo-vue/src/assets/coverage3.png)
+
+
+
+## Built With
+
+- [Vue.js](https://vuejs.org/) - The Progressive JavaScript Framework
+- [Vue CLI](https://cli.vuejs.org/) - Standard Tooling for Vue.js Development
+- [Vitest](https://vitejs.dev/guide/features.html) - Next Generation Frontend Tooling
+
+

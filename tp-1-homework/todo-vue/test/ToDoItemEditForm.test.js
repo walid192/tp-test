@@ -3,6 +3,7 @@ import ToDoItemEditForm from '@/components/ToDoItemEditForm.vue'
 import { describe, expect, it } from 'vitest'
 
 describe('ToDoItemEditForm', () => {
+    
     it('emits "item-edited" event with new label when form is submitted', async () => {
         const wrapper = mount(ToDoItemEditForm, {
             props: { label: 'Task 1', id: 'task-1' }

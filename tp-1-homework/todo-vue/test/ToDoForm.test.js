@@ -3,6 +3,7 @@ import ToDoForm from '@/components/ToDoForm.vue'
 import { describe, expect, it } from 'vitest'
 
 describe('ToDoForm', () => {
+  
   it('does not emit "todo-added" event if input is empty', async () => {
     const wrapper = mount(ToDoForm)
     const form = wrapper.find('form')
